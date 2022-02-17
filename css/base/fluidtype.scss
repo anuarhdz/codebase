@@ -1,0 +1,141 @@
+@supports (font-variation-settings: normal) {
+}
+
+/* Base */
+:root {
+  --font-size: calc(12px + 0.698vw); /* The character count on */
+  --line-height: calc(var(--font-size) * 1.4);
+  --letter-spacing: calc(var(--font-size) * 0.0015);
+  --font-weight: 400;
+  --red: #eb5757;
+  --blue: #0004b3;
+  --light-blue: #b3d7ff; /* The color is the native browser highlight text color, to make the appeal of importance and focus on specific areas of the text.*/
+  --dark-gray: #282c35;
+  --light-gray: #f7f7f7;
+
+}
+
+html,
+body {
+  font-variant-numeric: slashed-zero;
+}
+
+p,
+li,
+b,
+i,
+strong,
+a,
+button,
+mark {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  font-feature-settings: normal;
+  
+}
+
+p,
+li,
+mark,
+a,
+blockquote {
+  font-weight: var(--font-weight);
+}
+
+code {
+  font-size: calc(var(--font-size) * 1.1);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  color: var(--red);
+  
+}
+
+mark {
+  background: var(--light-blue);
+  padding: 0.05vw 0.4vw;
+  border-radius: 2px;
+  color: var(--dark-gray);
+  font-size: calc(var(--font-size) * 1.1);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  word-break: break-word;
+  
+}
+
+blockquote {
+  background-color: var(--light-gray);
+  font-size: calc(var(--font-size) * 1.1);
+  letter-spacing: var(--letter-spacing);
+  border-left: 4px solid var(--dark-gray);
+  border-radius: 2px;
+  padding: 2.5vw;
+  margin: 2%;
+  font-style: italic;
+}
+
+a, button {
+  color: var(--dark-gray);
+  text-decoration-skip-ink: none;
+}
+
+a:focus, button:focus {
+  outline: 1px dashed var(--blue);
+}
+
+a:hover, button:hover {
+  color: $mainColor;
+}
+
+pre {
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+  display: block;
+  margin: 0 0 1.5625em;
+  border-radius: 4px;
+  overflow: auto;
+  padding: 2.5vw;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-size: calc(var(--font-size) * 1.1);
+  letter-spacing: var(--letter-spacing);
+  
+}
+
+h1, .h1 {
+  font-size: calc(var(--font-size) * 3);
+  letter-spacing: var(--letter-spacing);  
+}
+
+h2, .h2 {
+  font-size: calc(var(--font-size) * 2);
+  letter-spacing: var(--letter-spacing);  
+}
+
+h3, .h3 {
+  font-size: calc(var(--font-size) * 1.75);
+  letter-spacing: var(--letter-spacing);  
+}
+
+h4, .h4 {
+  font-size: calc(var(--font-size) * 1.5);
+  letter-spacing: var(--letter-spacing);  
+}
+
+h5, .h5 {
+  font-size: calc(var(--font-size) * 1.25);
+  letter-spacing: var(--letter-spacing);  
+}
+
+h6, .h6 {
+  font-size: calc(var(--font-size) * 1);
+  letter-spacing: var(--letter-spacing);  
+}
+
+.small {
+  font-size: calc(var(--font-size) * .9);
+}

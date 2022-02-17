@@ -1,0 +1,30 @@
+// Media Queries
+
+$xsm: 460px;
+$sm: 640px;
+$md: 768px;
+$lg: 992px;
+$xl: 1220px;
+
+// colors
+$black: #000;
+$white: #fff;
+$gray: #dce0f3;
+$red: #ff0046;
+$green: #80f2c9;
+$orange: #ff4a1c;
+$gradient: linear-gradient(to bottom, #ff0084, #33001b);
+
+// auxiliar colors
+
+// Fonts
+$mainFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$secondaryFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+// Borders
+$button-borders: 1px solid $black;
+$button-borders-inset: 1px inset $black;
+$card-borders: $button-borders;
+
+// Transitions
+$button-transitions: color 0.5s ease, background 0.5s ease, border-color 0.5s ease;

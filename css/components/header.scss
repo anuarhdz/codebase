@@ -1,0 +1,27 @@
+header {
+  background-color: transparent;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: top 800ms ease, box-shadow 800ms ease, background 800ms ease;
+  box-shadow: 0 0 0 0 transparent;
+  .container {
+    @include container-childs-between;
+    align-items: center;
+  }
+
+  &.scroll-up, &.scroll-down, &:focus-within {
+    background-color: $white;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+  }
+
+  &.scroll-up, &:focus-within {
+    top: 0;
+  }
+
+  &.scroll-down {
+    top: -100%;
+  }
+}

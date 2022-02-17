@@ -1,0 +1,13 @@
+button:not(.toggle-button), .button, [type=button], [role=button] {
+  display: inline-block;
+  border: $button-borders;
+  padding: 1rem 2rem;
+  transition: $button-transitions;
+  text-align: center;
+
+  &:hover, &:focus {
+    color: $white;
+    background: $black;
+    border-color: $white;
+  }
+}

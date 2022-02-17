@@ -1,0 +1,19 @@
+body.is-loading {
+  overflow: hidden;
+}
+.loading {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  background-color:$mainColor;
+  z-index: 10;
+  @include center-childs;
+
+  .content {
+    color: $white;
+    h3, p {
+      text-transform: uppercase;
+    }
+  }
+}
