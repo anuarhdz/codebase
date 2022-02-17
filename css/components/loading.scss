@@ -6,7 +6,6 @@ body.is-loading {
   height: 100vh;
   position: fixed;
   inset: 0;
-  background-color:$mainColor;
   z-index: 10;
   @include center-childs;
 

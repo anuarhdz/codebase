@@ -85,7 +85,7 @@ a:focus, button:focus {
 }
 
 a:hover, button:hover {
-  color: $mainColor;
+  color: var(--blue);
 }
 
 pre {
