@@ -1,0 +1,25 @@
+.cookies {
+  background-color: $black;
+  color: $white;
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  .cookies-container {
+    padding: .5em 1em;
+    @media screen and (min-width: $md){
+      padding: 1em 2em;
+    }
+    .cookies-text {
+      flex-grow: 1;
+    }
+    .cookies-button {
+       border: 1px solid $white;
+    }
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

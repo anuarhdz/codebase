@@ -1,3 +1,12 @@
+.fixed-container {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  transform: translateZ(0);
+}
+
 html {
   &.menu-opened {
     body {
@@ -15,7 +24,7 @@ header, section, footer {
   }
 }
 
-.container {
+.container, .cookies-container {
   max-width: 1200px;
   margin: 0 auto;
 }

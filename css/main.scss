@@ -11,8 +11,6 @@
 @import './base/variables';
 @import './base/typography';
 
-
-
 // BASE
 @import './base/base';
 
@@ -30,6 +28,8 @@
 @import './components/loading';
 @import './components/header';
 @import './components/footer';
+@import './components/dialog';
+@import './components/cookies';
 
 // PAGES
 

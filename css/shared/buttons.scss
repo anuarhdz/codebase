@@ -1,4 +1,4 @@
-button:not(.toggle-button), .button, [type=button], [role=button] {
+button:not(.toggle-button, .close-button), .button, [type=button], [role=button] {
   display: inline-block;
   border: $button-borders;
   padding: 1rem 2rem;
