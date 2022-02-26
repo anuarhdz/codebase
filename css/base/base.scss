@@ -1,13 +1,3 @@
-html body {
-  font-family: serif;
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  color:$black;
-}
-
-html.fonts-loaded body {
-   font-family: $mainFont;
-}
 
 // Screen Readers only
 .sr-only {

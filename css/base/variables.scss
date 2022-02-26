@@ -18,6 +18,7 @@ $gradient: linear-gradient(to bottom, #ff0084, #33001b);
 // auxiliar colors
 
 // Fonts
+$systemFont: -apple-system, 'Helvetica', sans-serif;
 $mainFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 $secondaryFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
@@ -28,3 +29,51 @@ $card-borders: $button-borders;
 
 // Transitions
 $button-transitions: color 0.5s ease, background 0.5s ease, border-color 0.5s ease;
+
+
+// Fonts / Typography
+
+// return font-size to mobile and md to up
+@mixin font-size($fz-mobile, $fz-desktop){
+  font-size: $fz-mobile;
+  @media screen and (min-width: $md){
+    font-size: $fz-desktop;
+  }
+}
+
+// LAYOUT
+// common flex
+@mixin flex-properties($horizontal-direction, $vertical-direction){
+  flex-wrap: wrap;
+  justify-content: $horizontal-direction;
+  align-content: $vertical-direction;
+}
+
+// always justified items space-between
+@mixin container-childs-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+// UTILS
+@mixin position-visible($z-index) {
+  position: relative;
+  z-index: $z-index;
+}
+
+
+@mixin center-childs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// media queries
+@mixin vertical-center($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
